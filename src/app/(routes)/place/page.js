@@ -1,28 +1,30 @@
-'use client'
+'use client';
 
-import Card from "@/components/card.js";
-import api from "@/services/api.js";
-import { useEffect, useState } from "react";
-import Heading from "@/components/heading.js";
+import { useEffect, useState } from 'react';
+import Card from '@/components/card.js';
+import api from '@/services/api.js';
+import Heading from '@/components/heading.js';
 import styles from '@/app/(routes)/layout.module.css';
 
-export default function Place() {
-    const [places, setPlaces] = useState([]);
-    
-    useEffect(() => {
-      api.get('/place')
-      .then((res) => setPlaces(res.data))
-      .catch((error) => console.error(error));
-    }, []);
+const Places = () => {
+  const [places, setPlaces] = useState([]);
 
-    return (
-      <div className={styles.section}>
-        <Heading category={'Places'} />
-        <div className={styles.cards}>
+  useEffect(() => {
+    api.get('/places')
+      .then(response => setPlaces(response.data))
+      .catch(error => console.error('Error fetching places data:', error));
+  }, []);
+
+  return (
+    <div className={styles.section}>
+      <Heading category="Places"/>
+      <div className={styles.cards}>
           {places.map((place) => (
-            <Card key={place.id} title={place.name} image={`http://localhost:1337${place.photo_link}`} />
+            <Card key={place.id} title={place.name} image={`http://localhost:1337${place.link}`}/>
           ))}
-        </div>
       </div>
-    );
-}
+    </div>
+  );
+};
+
+export default Places;

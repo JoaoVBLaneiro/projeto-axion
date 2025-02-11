@@ -10,17 +10,17 @@ const Food = () => {
   const [foods, setFoods] = useState([]);
 
   useEffect(() => {
-    api.get('/food')
+    api.get('/foods')
       .then(response => setFoods(response.data))
       .catch(error => console.error('Error fetching food data:', error));
   }, []);
 
   return (
     <div className={styles.section}>
-      <Heading category="Foods" />
+      <Heading category="Foods"/>
       <div className={styles.cards}>
           {foods.map((food) => (
-            <Card key={food.id} title={food.name} image={`http://localhost:1337${food.link}`} />
+            <Card key={food.id} title={food.name} image={`http://localhost:1337${food.link}`}/>
           ))}
         </div>
     </div>
