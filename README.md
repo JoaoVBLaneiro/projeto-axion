@@ -1,40 +1,30 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+## Axion Test Project
 
-First, run the development server:
+Bom dia, boa tarde ou boa noite, me chamo João Vitor Laneiro, e fui atarefado a fazer esta básica aplicação em React pela empresa [AXION](https://axion.company/) com base em uma API fornecida por [eles](https://github.com/AxionCompany/axion-test) e modificada por [mim](https://github.com/JoaoVBLaneiro/orange-axion-test).
 
+Todo o processo de desenvolvimento foi divertido, apesar dos problemas que enfrentei tanto na programação quanto pessoalmente. De toda forma, mesmo que não seja aprovado, foi legal dar uma testada no que sei fazer (obrigado vídeoaulas do Diego e do Watinha que achei).
+
+### Como rodar
+
+Primeiro, baixe todas as dependências do projeto depois de cloná-lo:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Segundo, rode o servidor de desenvolvedor:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Abra então: [http://localhost:3000](http://localhost:3000) no seu navegador para ver.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Claro, você também vai precisar da API em servidor fornecida, a minha versão pode ser encontrada [aqui](https://github.com/JoaoVBLaneiro/orange-axion-test).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
+### Ver Mais
+Aprenda mais sobre Next.js através da documentação:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
