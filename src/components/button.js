@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '@/styles/button.css';
+import styles from '@/components/button.module.css';
 
 export default function Button({ text, onClick, className }) {
     return (

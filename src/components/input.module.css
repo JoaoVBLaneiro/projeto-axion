@@ -1,6 +1,6 @@
 .label {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .inputContainer {
@@ -9,11 +9,11 @@
 
 .input {
     width: 100%;
-    font-size: 1rem;
-    padding: 0.8rem 3rem 0.8rem 0.8rem;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem 1rem 1rem;
     border: 1px solid var(--black);
     color: var(--black);
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .input::placeholder {
@@ -28,4 +28,5 @@
     position: absolute;
     top: 50%;
     right: 1rem;
+    transform: translateY(-50%);
 }

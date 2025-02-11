@@ -1,0 +1,26 @@
+.header {
+    background-color: var(--white);
+    display: flex;
+    padding: 1.5rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .15);
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.navLink {
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLink:hover,
+.navLink:focus {
+    font-weight: 700;
+    transform: scale(1.1);
+}
