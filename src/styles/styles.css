@@ -1,5 +1,7 @@
+@import './variables.css';
+
 body {
-  background-color: white;
+  background-color: var(--white2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,11 +11,11 @@ body {
 
 a {
   text-decoration: none; 
-  color: #4A4A4A; 
+  color: var(--black); 
 }
 
 .login-box {
-  background-color: white;
+  background-color: var(--white);
   padding: 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 400px;
@@ -51,7 +53,7 @@ a {
   position: absolute;
   left: 10px;
   top: 50%;
-  color: #9B9B9B;
+  color: var(--grey);
   font-size: 18px;
 }
 
@@ -73,8 +75,8 @@ a {
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  color: white;
-  background: linear-gradient(90deg, #AE23A9, #DC4E1B);
+  color: var(--white);
+  background: linear-gradient(90deg, var(--purple), var(--orange));
   cursor: pointer;
   margin-bottom: 10px;
 }

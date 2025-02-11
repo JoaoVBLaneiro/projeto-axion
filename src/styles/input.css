@@ -1,0 +1,31 @@
+.label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem 3rem 0.8rem 0.8rem;
+    border: 1px solid var(--black);
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.input::placeholder {
+    font-weight: 300;
+}
+
+.input:hover {
+    background-color: var(--white2);
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+}

@@ -1,0 +1,15 @@
+.button {
+    color: var(--black);
+    border: 1px solid var(--grey);
+    width: 100%;
+    background-color: transparent;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--grey);
+    color: var(--white);
+}
